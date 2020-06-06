@@ -9,6 +9,8 @@
 </br>
 <%= render partial: 'comments/form' %>
 </br>
+<p><%= image_tag @article.image.url(:medium) %></p>
+</br>
 <p>
   Tags:
   <% @article.tags.each do |tag| %>
